@@ -1,0 +1,16 @@
+$lato-sans: 'Lato', sans-serif;
+$oswald-sans: "Oswald", sans-serif;
+$roboto-sans: 'Roboto Condensed', sans-serif;
+$varela-sans: 'Varela Round', sans-serif;
+
+$theme-colors: (
+        blue1: #02A8EB,
+        grey1: #626262
+);
+
+$default-theme-color: map_get($theme-colors, 'blue1');
+$menu-dropdown-link-hover-color: map_get($theme-colors, 'grey1');
+
+@mixin page-overlay-margin() {
+  padding: 132px 0 40px;
+}

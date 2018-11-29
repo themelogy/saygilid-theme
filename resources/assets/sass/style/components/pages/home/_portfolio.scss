@@ -1,0 +1,112 @@
+/* -----------------------------------------------------------------------------PORTOFOLIO AND HOME PROCESS ------------------ */
+
+.portfolio-wrap-main {
+  padding: 100px 0 90px;
+}
+
+.portfolio-grid-4col .folio-item {
+  width: 25%;
+  padding: 0 15px 30px;
+}
+
+.portfolio-grid-3col .folio-item {
+  width: 33.3333%;
+  padding: 0 15px 30px;
+}
+
+.portfolio-full-3col .folio-item {
+  width: 33.3333%;
+}
+
+.folio-item {
+  float: left;
+  img {
+    width: 100%;
+  }
+}
+
+.home-process {
+  padding: 43px 0 100px;
+}
+
+.process-box {
+  padding: 50px 20px;
+  background-color: #F7F7F7;
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+  i {
+    text-align: left;
+    font-size: 135px;
+    color: #F2F2F2;
+    position: absolute;
+    left: 20px;
+    bottom: 10px;
+    z-index: -1;
+  }
+  h3 {
+    font-size: 60px;
+    color: #DDD;
+    line-height: 1;
+    margin: 0 0 20px;
+  }
+  h2 {
+    font-size: 21px;
+    font-weight: 400;
+    color: #222;
+    line-height: 1;
+    padding-top: 6px;
+    margin: 0 0 30px;
+    a {
+      color: #222;
+      font-family: $oswald-sans;
+    }
+  }
+  p {
+    line-height: 24px;
+    margin: 0;
+  }
+}
+
+.process-box:hover h2,
+.process-box:hover h3,
+.process-box:hover h2 a,
+.process-box:hover p {
+  color: #fff;
+}
+
+.process-box:hover i {
+  color: #000;
+  opacity: 0.1;
+}
+
+@media screen and (max-width:990px) {
+  .process-box {
+    margin-bottom: 30px
+  }
+}
+
+.button-wrap {
+  padding: 43px 0 100px;
+}
+
+.button-wrap .content-head {
+  margin: 57px 0px 80px;
+}
+
+.bg-dark {
+  background-color: #1c1c1c !important;
+}
+
+.bg-grey {
+  background-color: #f7f7f7 !important;
+}
+
+.counter-box2 {
+  background: url(../images/bg/bg-counter.jpg) no-repeat center;
+  background-size: cover;
+}
+
+.counter-box2 .counter-box-info .count {
+  color: #fff;
+}

@@ -1,0 +1,38 @@
+/* -----------------------------------------------------------------------------PROFILE ------------------ */
+
+.home-profile {
+  padding: 25px 0px 25px;
+  h3 {
+    margin: 0 0 34px;
+    display: block;
+    i {
+      height: 57px;
+      width: 62px;
+      font-size: 26px;
+      line-height: 57px;
+      color: #FFF;
+      text-align: center;
+      float: left;
+      -webkit-transition: all 0.2s linear 0s;
+      transition: all 0.2s linear 0s;
+    }
+    a {
+      color: #222;
+      text-transform: uppercase;
+      font-weight: 400;
+      font-size: 32px;
+      line-height: 1;
+      padding-left: 21px;
+      display: inline-block;
+      padding-top: 16px;
+    }
+  }
+  p {
+    line-height: 24px;
+  }
+  .bttn {
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 15px;
+  }
+}

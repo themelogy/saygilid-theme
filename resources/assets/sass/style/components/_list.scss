@@ -1,0 +1,40 @@
+/* -----------------------------------------------------------------------------LIST ------------------ */
+
+.list {
+  margin-top: -1px;
+  margin-bottom: 38px;
+}
+
+.list li {
+  line-height: 1.7;
+  color: #8F8F8F;
+  position: relative;
+}
+
+.list li:before {
+  content: "\f0a9";
+  font-family: "FontAwesome";
+  font-size: 14px;
+  margin: 0px 10px 0px 0px;
+}
+
+.img-border {
+  position: relative;
+}
+
+.img-border:after {
+  content: "";
+  background: transparent;
+  border: 5px solid rgba(255, 255, 255, 0.5);
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  bottom: 14px;
+  right: 14px;
+}
+
+@media screen and (max-width:500px) {
+  .home-profile .img-border img {
+    width: 100%
+  }
+}

@@ -1,0 +1,70 @@
+/* -----------------------------------------------------------------------------RESET ------------------ */
+
+html {
+  font-size: 10px;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+body::-webkit-scrollbar {
+  width: 10px;
+  background-color: #19394B
+}
+
+:root {
+  overflow-x: hidden!important;
+}
+
+body {
+  font-family: $roboto-sans;
+  font-weight: 400;
+  color: #8f8f8f;
+}
+
+p {
+  font-family: $roboto-sans;
+  font-size: 14px;
+  font-weight: 400;
+  color: #8F8F8F;
+  line-height: 28px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $roboto-sans;
+  font-weight: 400;
+  color: #222;
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a,
+a:hover,
+a:focus,
+input,
+input:focus,
+button,
+button:focus,
+textarea,
+textarea:focus {
+  outline: 0;
+  text-decoration: none;
+}
+
+table {
+  th p, th {
+    font-weight: bold;
+    margin-top: 5px !important;
+  }
+  td p {
+    margin-top: 5px !important;
+  }
+}

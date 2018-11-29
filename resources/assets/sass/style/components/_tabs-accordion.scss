@@ -1,0 +1,134 @@
+/* -----------------------------------------------------------------------------TABS AND ACCORDION ------------------ */
+
+.nav-tabs li {
+  border: 1px solid #ececec;
+}
+
+.tab-content {
+  border-top: 1px solid #ececec;
+  margin-top: -1px;
+}
+
+.nav-tabs li.active {
+  position: relative;
+}
+
+.nav-tabs li.active:after {
+  content: "";
+  height: 4px;
+  position: absolute;
+  width: 100%;
+  top: -4px;
+  left: 0;
+  right: 0;
+}
+
+.nav-tabs li.active:before {
+  content: "";
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-top-width: 4px;
+  border-style: solid;
+  display: block !important;
+  left: 0px;
+  right: 0px;
+  width: 8px;
+  position: absolute;
+  top: 0px;
+  margin: auto;
+  z-index: 77;
+}
+
+.nav-tabs li a {
+  border: none !important;
+  border-radius: 0px;
+  background: #fff !important;
+  font-size: 14px;
+  line-height: 1;
+  color: #222;
+  text-align: center;
+  min-width: 114px;
+  line-height: 50px;
+  padding: 0 25px;
+  margin: 0;
+}
+
+.tab-pane {
+  border: none !important;
+  border-radius: 0px;
+  padding: 20px 0;
+  background: #fff !important;
+}
+
+.img-left {
+  float: left;
+  margin-right: 30px;
+}
+
+@media screen and (max-width: 500px) {
+  .img-responsive {
+    float: none;
+    display: inline-block;
+  }
+}
+
+@media screen and (max-width:990px) {
+  .img-responsive {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.tab-pane p {
+  margin: -10px 0 0;
+}
+
+#accordion .panel-heading {
+  color: #222;
+  background: transparent !important;
+  border: none;
+  padding: 0;
+}
+
+#accordion .panel-heading a {
+  padding: 11px 20px;
+  border: 1px solid #ECECEC;
+  display: table;
+  width: 100%;
+  font-size: 14px;
+  color: #222;
+}
+
+#accordion .panel-heading.actives a {
+  border-width: 1px;
+  border-style: solid;
+  color: #fff;
+}
+
+#accordion .panel-heading a i {
+  margin-right: 14px;
+}
+
+#accordion .panel-group .panel {
+  margin-bottom: 0px;
+  border-radius: 0;
+  border: none;
+}
+
+#accordion .panel,
+#accordion .panel + .panel {
+  margin-bottom: 10px;
+  box-shadow: none;
+  border: none;
+}
+
+#accordion .panel-body {
+  border: 1px solid #ECECEC;
+  border-top: none;
+  padding: 15px 20px;
+}
+
+#accordion .panel-body p {
+  margin: 0;
+}

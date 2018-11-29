@@ -1,0 +1,55 @@
+
+/* -----------------------------------------------------------------------------HOME INFO AND PROJECTS ------------------ */
+
+.home-info2 {
+  background: #000 url(../images/bg/3.jpg) no-repeat center;
+  background-size: cover;
+  padding: 95px 0;
+}
+
+.home-info2 p {
+  color: #FFF;
+  margin-bottom: 20px;
+}
+
+.home-info2 h3 {
+  color: #FFF;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 1;
+  display: inline-block;
+  margin: 0px 0px 26px;
+}
+
+.home-info2 .bttn {
+  float: left;
+  margin-right: 10px;
+  margin-bottom: 15px;
+}
+
+.home-info2 .list li {
+  color: #fff;
+}
+
+.home-projects-grid {
+  padding: 43px 0px 101px;
+  background: #fff;
+}
+
+.home-projects-grid .col-md-4 {
+  margin-bottom: 30px;
+}
+
+.project-overlay-dark {
+  background: #222;
+}
+
+.project-overlay-dark h4 a,
+.project-overlay-dark span {
+  color: #fff;
+}
+
+.project-overlay-dark .project-expand {
+  color: #fff;
+}

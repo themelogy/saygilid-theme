@@ -1,0 +1,25 @@
+/* -----------------------------------------------------------------------------PRELOADER ------------------ */
+
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #fff;
+  /* change if the mask should be a color other than white */
+  z-index: 9999999;
+  /* makes sure it stays on top */
+}
+
+#status {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  background: #FFF;
+  height: 36px;
+  width: 36px;
+  margin-left: -18px;
+  margin-top: -18px;
+}

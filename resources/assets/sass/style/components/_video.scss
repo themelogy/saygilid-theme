@@ -1,0 +1,89 @@
+
+/* -----------------------------------------------------------------------------VEDIO ------------------ */
+
+.video-bg-wrap {
+  background: url(../images/bg/bg-video.jpg) no-repeat center center;
+  background-size: cover;
+  overflow: hidden;
+  position: relative;
+}
+
+.video-bg-wrap .overlay {
+  opacity: 0.45;
+}
+
+.video-bg-wrap .overlay.active {
+  opacity: 1;
+}
+
+.video_player {
+  position: absolute;
+  left: -10%;
+  right: 0px;
+  z-index: 9999;
+  width: 100%;
+  height: 140%;
+  top: -15%;
+  opacity: 0;
+  z-index: 11;
+}
+
+.video_player.active {
+  opacity: 0.50;
+}
+
+.video_player.active {
+  opacity: 0.75;
+}
+
+a#playVid {
+  width: 100px;
+  height: 100px;
+  border-width: 10px;
+  display: inline-block;
+  border-radius: 50%;
+  border-style: solid;
+  border-color: rgba(255, 255, 255, 0.3);
+  cursor: pointer;
+}
+
+a#playVid i {
+  background-color: #FFF;
+  border-radius: 50%;
+  display: block;
+  width: 100%;
+  height: 100%;
+  line-height: 80px;
+  font-size: 36px;
+}
+
+.video-bg-wrap {
+  overflow: hidden;
+  position: relative;
+  height: 497px;
+  padding-top: 121px;
+}
+
+.video-bg-wrap .container {
+  position: relative;
+  z-index: 55;
+}
+
+.video-text h2 {
+  color: #FFF;
+  font-size: 42px;
+  text-transform: uppercase;
+  font-weight: 400;
+  padding-top: 35px;
+  line-height: 1.1;
+  margin-bottom: 20px;
+}
+
+.video-text p {
+  color: #FFF;
+  font-size: 16px;
+  line-height: 1.61;
+  max-width: 573px;
+  margin-left: auto;
+  margin-right: auto;
+}

@@ -1,0 +1,42 @@
+.top-bar {
+  .languages {
+    .btn-default {
+      border: none;
+      text-transform: uppercase;
+      span {
+        margin-right: 5px;
+      }
+    }
+    .dropdown-menu {
+      min-width: 130px;
+      li.active a {
+        background: map_get($theme-colors, 'grey1');
+        color: #fff;
+      }
+      a {
+        display: block;
+        padding: 5px 10px;
+        clear: both;
+        line-height: 1.42857143;
+        color: #333;
+        white-space: nowrap;
+        background: none;
+        font-family: $roboto-sans;
+        span {
+          margin-right: 10px;
+        }
+      }
+      a:hover {
+        background: map_get($theme-colors, 'grey1');
+        color: #fff;
+      }
+      li+li>a {
+        border: none;
+      }
+      li a:before {
+        content: "";
+        padding: 0;
+      }
+    }
+  }
+}

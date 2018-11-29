@@ -1,0 +1,58 @@
+
+/* -----------------------------------------------------------------------------Body Boxed ------------------ */
+body.body-boxed,
+body.boxed-image,
+body.boxed-color,
+body.boxed-pattern {
+  max-width: 1170px;
+  margin: 0 auto;
+  box-shadow: 0 0 6px 1px rgba(112, 112, 112, .2)
+}
+
+body.boxed-pattern {
+  background-image: url(../images/pattern.png);
+  background-repeat: repeat;
+  background-color: #fff;
+}
+
+body.boxed-image {
+  background-image: url(../images/bg-image.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover
+}
+
+body.boxed-color {
+  background: #121212;
+}
+
+.service-box2,
+header,
+.home-blog,
+.home-info,
+.home-projects-full,
+.team-wrap,
+.home-profile,
+.home-process,
+.home-features-side {
+  background: #fff;
+}
+
+body.body-boxed .rev_slider,
+body.boxed-image .rev_slider,
+body.boxed-color.rev_slider,
+body.boxed-pattern .rev_slider {
+  width: 100%!important;
+  left: 0!important
+}
+
+.overlay-wrap .overlay {
+  z-index: 0;
+  display: block!important
+}
+
+.no-overflow {
+  overflow: hidden!important;
+}

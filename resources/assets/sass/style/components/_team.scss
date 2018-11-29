@@ -1,0 +1,168 @@
+/* -----------------------------------------------------------------------------TEAM ------------------ */
+
+.team-staff {
+  margin-top: 6px;
+}
+
+.staff-overlay {
+  background: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.team-social {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.team-social li {
+  position: relative;
+  top: 30px;
+  padding: 0;
+  opacity: 0;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.team-social li a {
+  width: 30px;
+  height: 30px;
+  color: #FFF;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 30px;
+  font-size: 18px;
+  display: table;
+}
+
+.team-social li a:hover {
+  color: #FFF;
+}
+
+.staff-info {
+  background: #F8F8F8;
+}
+
+.team-staff:hover .staff-info h3 {
+  color: #fff;
+  letter-spacing: -0.01em;
+}
+
+.team-staff:hover .staff-info p {
+  color: #222;
+}
+
+.team-staff:hover .staff-overlay {
+  opacity: 1;
+  visibility: visible;
+}
+
+.team-staff:hover .team-social li {
+  position: relative;
+  top: 0px;
+  opacity: 1;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.team-staff:hover .team-social li:first-child {
+  -webkit-transition-delay: .1s;
+  transition-delay: .1s;
+}
+
+.team-staff:hover .team-social li:nth-child(2) {
+  -webkit-transition-delay: .2s;
+  transition-delay: .2s;
+}
+
+.team-staff:hover .team-social li:nth-child(3) {
+  -webkit-transition-delay: .3s;
+  transition-delay: .3s;
+}
+
+.team-staff:hover .team-social li:nth-child(4) {
+  -webkit-transition-delay: .4s;
+  transition-delay: .4s;
+}
+
+.team-staff:hover .team-social li:nth-child(5) {
+  -webkit-transition-delay: .5s;
+  transition-delay: .5s;
+}
+
+#team-wrap .item {
+  padding: 0 15px;
+}
+
+#team-wrap .owl-prev {
+  width: 40px;
+  height: 40px;
+  background: #2B2B2B;
+  opacity: 1;
+  margin: 1px 0 0;
+  padding: 0px;
+  position: absolute;
+  left: -45px;
+  top: 41%;
+  font-size: 0;
+}
+
+#team-wrap .owl-next {
+  width: 40px;
+  height: 40px;
+  background: #2B2B2B;
+  opacity: 1;
+  margin: 1px 0 0;
+  padding: 0px;
+  position: absolute;
+  right: -45px;
+  top: 41%;
+  font-size: 0;
+}
+
+#team-wrap .owl-prev:hover,
+#team-wrap .owl-next:hover {
+  color: #fff;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+#team-wrap .owl-prev:after {
+  content: "\f104";
+  font-size: 16px;
+  font-family: 'FontAwesome';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 21px;
+  color: #FFF;
+}
+
+#team-wrap .owl-next:after {
+  content: "\f105";
+  font-size: 16px;
+  font-family: 'FontAwesome';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 21px;
+  color: #FFF;
+}
+

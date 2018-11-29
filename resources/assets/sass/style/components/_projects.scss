@@ -1,0 +1,294 @@
+
+/* -----------------------------------------------------------------------------PROJECTS ------------------ */
+
+.projects-content {
+  background: url(../images/pattern.jpg);
+  padding: 42px 0px 101px;
+}
+
+.project-filter {
+  display: table;
+  margin: 27px auto 39px;
+  position: relative;
+  padding: 0 20px;
+}
+
+.project-filter:before {
+  position: absolute;
+  top: 50%;
+  width: 20px;
+  content: "";
+  left: 0;
+  margin-top: 0;
+  border-style: solid;
+  border-width: 2px 0 0 0;
+}
+
+.project-filter:after {
+  position: absolute;
+  top: 50%;
+  width: 20px;
+  content: "";
+  right: 0;
+  margin-top: 0;
+  border-style: solid;
+  border-width: 2px 0 0 0;
+}
+
+.project-filter a {
+  float: left;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  line-height: 2;
+  position: relative;
+  color: #fff;
+}
+
+.project-filter a i {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  height: 14px;
+  top: 16px;
+  left: 0;
+  right: 0;
+  opacity: 0;
+}
+
+.no-padding {
+  padding: 0;
+}
+
+.no-padding-bottom {
+  padding-bottom: 0px !important;
+}
+
+#home-projects {
+  padding-bottom: 50px;
+}
+
+#home-projects .owl-item {
+  float: left;
+}
+
+.project-item {
+  position: relative;
+  overflow: hidden;
+}
+
+.project-item img {
+  max-width: 100%;
+  display: block;
+  position: relative;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.project-item:hover img {
+  -webkit-transform: translateY(-50px);
+  transform: translateY(-50px);
+}
+
+.project-overlay {
+  background: #fff;
+  padding: 14px 20px 12px;
+  -webkit-transition: .4s;
+  transition: .4s;
+  position: absolute;
+  width: 100%;
+  height: 68px;
+  bottom: -68px;
+  left: 0;
+  right: 0;
+}
+
+.project-overlay h4 {
+  text-transform: uppercase;
+  font-size: 18px;
+  line-height: 1;
+  font-weight: 400;
+  margin: 0 0 4px;
+}
+
+.project-overlay h4 a {
+  color: #222;
+}
+
+.project-cat {
+  display: inline-block;
+  padding-top: 0px;
+  font-size: 11px;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.project-overlay .project-view,
+.project-overlay .project-expand {
+  position: absolute;
+  top: 0;
+  padding: 20px 24px;
+  height: 100%;
+  -webkit-transition: .4s;
+  transition: .4s;
+  font-size: 20px;
+}
+
+.project-overlay .project-view {
+  color: #fff;
+  right: 65px;
+}
+
+.project-overlay .project-view:hover {
+  color: #212121;
+}
+
+.project-overlay .project-expand {
+  right: 0;
+  background-color: #212121;
+}
+
+.project-overlay .project-expand:hover {
+  color: #fff;
+}
+
+.project-item:hover .project-overlay {
+  width: 100%;
+  bottom: 0px;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+#home-projects .owl-controls {
+  text-align: center;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  margin: 0 auto;
+}
+
+#home-projects .owl-prev {
+  background: #3f3f3f;
+  opacity: 1;
+  font-size: 0px;
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+  position: absolute;
+  right: 40px;
+  top: 0px;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+#home-projects .owl-next {
+  background: #3f3f3f;
+  opacity: 1;
+  font-size: 0px;
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+#home-projects .owl-prev:hover,
+#home-projects .owl-next:hover {
+  color: #fff;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+#home-projects .owl-prev:after {
+  content: "\f104";
+  font-size: 16px;
+  font-family: 'FontAwesome';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+}
+
+@media screen and (max-width:800px) {
+  .project-overlay .project-view,
+  .project-overlay .project-expand {
+    padding: 20px 19% 5px;
+  }
+  .project-overlay .project-view {
+    right: auto;
+    left: 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .project-overlay {
+    zoom: 0.5;
+  }
+  .pp_content,
+  div.ppt,
+  div.pp_pic_holder,
+  div.ppt img#fullResImage {
+    width: 100% !important;
+  }
+  .project-item:hover img {
+    -webkit-transform: translateY(-28px);
+    transform: translateY(-28px);
+  }
+}
+
+#home-projects .owl-next:after {
+  content: "\f105";
+  font-size: 16px;
+  font-family: 'FontAwesome';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+}
+
+.video-content {
+  background: #f7f7f7;
+  padding: 100px 0px;
+}
+
+.video-content h4 {
+  font-size: 32px;
+  font-weight: 400;
+  margin: 39px 0 30px;
+}
+
+.video-content h4 span {
+  color: #222;
+}
+
+.video-content p {
+  margin-bottom: 34px;
+}
+
+.video {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 0;
+  height: 0;
+}
+
+.video iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}

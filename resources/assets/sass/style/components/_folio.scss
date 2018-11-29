@@ -1,0 +1,36 @@
+
+/* -----------------------------------------------------------------------------FOLIO ISOTOP ------------------ */
+
+.folio-filter-wrap {
+  background: #f4f4f4;
+  height: 44px;
+  margin: 6px auto 30px;
+}
+
+.folio-filter {
+  display: table;
+}
+
+.folio-filter li {
+  margin: 0 -2px;
+  padding: 0;
+}
+
+.folio-filter li a {
+  background-color: transparent;
+  line-height: 44px;
+  padding: 0px 25px;
+  text-transform: uppercase;
+  font-size: 11px;
+  display: table;
+  color: #222;
+}
+
+.folio-filter li a.active,
+.folio-filter li a:hover {
+  color: #fff;
+}
+
+.folio-full .folio-item {
+  width: 25%;
+}

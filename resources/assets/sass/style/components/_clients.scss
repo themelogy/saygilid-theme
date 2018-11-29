@@ -1,0 +1,58 @@
+
+/* -----------------------------------------------------------------------------CLINETS ------------------ */
+
+.clients {
+  background: #fff;
+  padding: 57px 0px;
+}
+
+.clients .grid-4 {
+  text-align: center;
+}
+
+.clients img {
+  opacity: 0.8;
+  -webkit-transition: .4s;
+  transition: .4s;
+  cursor: pointer;
+  margin-bottom: 15px;
+}
+
+.clients img:hover {
+  opacity: 1;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.client2 {
+  padding: 83px 0px 80px;
+  background: #222 url(../images/pattern.jpg);
+}
+
+#clients2 .item {
+  padding: 0 15px;
+}
+
+#clients2 .item img {
+  display: table;
+  margin: 0 auto;
+  opacity: 0.5;
+}
+
+#clients2 .item img:hover {
+  opacity: 1;
+}
+
+.home-contents {
+  padding: 90px 0;
+  background: #fafafa;
+}
+
+.home-contents h2 {
+  font-weight: 400;
+  font-size: 24px;
+  color: #222;
+  line-height: 1;
+  margin-bottom: 44px;
+}
+

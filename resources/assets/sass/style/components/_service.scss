@@ -1,0 +1,211 @@
+
+/* -----------------------------------------------------------------------------SERVICE ------------------ */
+
+.service-text {
+  color: #ffffff;
+  max-width: 670px;
+  margin: auto;
+  display: block;
+  font-family: $roboto-sans;
+  font-size: 21px;
+  font-style: italic;
+  font-weight: 100;
+  line-height: 1.71px;
+  text-align: center
+}
+
+.s1-box h4 {
+  font-size: 30px;
+  font-weight: 400;
+  color: #FFF;
+  line-height: 1;
+}
+
+.s1-box h5 {
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 1;
+  margin: 20px 0px 32px;
+  text-transform: uppercase;
+}
+
+.service-box2 {
+  padding: 43px 0px 71px;
+}
+
+.s2-box {
+  margin-bottom: 29px;
+}
+
+.s2-box-ico {
+  display: block;
+  height: 68px;
+  width: 68px;
+  border-top-width: 4px;
+  border-style: solid;
+  margin: 7px auto 0;
+  -webkit-transition: all 0.2s linear 0s;
+  transition: all 0.2s linear 0s;
+  font-size: 32px;
+  line-height: 60px;
+  color: #FFF;
+}
+
+.s2-box:hover .s2-box-ico {
+  background-color: #fff;
+  border-top-width: 4px;
+  border-style: solid;
+  color: #222222;
+}
+
+.s2-box h3 {
+  font-size: 21px;
+  padding-top: 19px;
+  margin: 0 0 11px;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.s2-box h3 a {
+  color: #222;
+}
+
+.s2-box p {
+  line-height: 24px;
+}
+
+.service-box3 {
+  padding: 43px 0px 158px;
+  background: #f8f8f8;
+}
+
+.service-box4 {
+  background: #000 url(../images/bg/1.jpg) no-repeat center top;
+  background-size: cover;
+  padding: 146px 0;
+}
+
+.service-box4 p {
+  color: #ffffff;
+  max-width: 670px;
+  margin: auto;
+  display: block;
+  font-family: $roboto-sans;
+  font-size: 21px;
+  font-style: italic;
+  font-weight: 100;
+  line-height: 1.71;
+  margin-bottom: 30px
+}
+
+.s3-box {
+  padding: 0 0px;
+}
+
+.s3-box h3 {
+  line-height: 1;
+  font-size: 18px;
+  padding-top: 10px;
+  font-weight: 400;
+  margin: 0 0 20px;
+}
+
+.s3-box h3 a {
+  color: #222;
+}
+
+.s3-box-ico {
+  background-color: transparent;
+  border: 4px solid transparent;
+  font-size: 40px;
+  line-height: 60px;
+  width: 68px;
+  height: 68px;
+  display: table;
+  margin: 0px auto 2px;
+  cursor: pointer;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.s3-box:hover .s3-box-ico {
+  border-top-width: 4px;
+  border-style: solid;
+  color: #222;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.s3-box p {
+  line-height: 24px;
+  padding: 0 10px;
+}
+
+#service-box3 .item {
+  padding: 0 15px;
+}
+
+#service-box3 .owl-prev {
+  width: 40px;
+  height: 40px;
+  background: #2B2B2B;
+  opacity: 1;
+  margin: 2px 0px 0px;
+  padding: 0px;
+  position: absolute;
+  left: 50%;
+  bottom: -66px;
+  font-size: 0px;
+  margin-left: -42px;
+}
+
+#service-box3 .owl-next {
+  width: 40px;
+  height: 40px;
+  background: #2B2B2B;
+  opacity: 1;
+  margin: 2px 0px 0px;
+  padding: 0px;
+  position: absolute;
+  left: 50%;
+  bottom: -66px;
+  font-size: 0px;
+  margin-left: 2px;
+}
+
+#service-box3 .owl-prev:hover,
+#service-box3 .owl-next:hover {
+  color: #fff;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+#service-box3 .owl-prev:after {
+  content: "\f104";
+  font-size: 16px;
+  font-family: 'FontAwesome';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 21px;
+  color: #FFF;
+}
+
+#service-box3 .owl-next:after {
+  content: "\f105";
+  font-size: 16px;
+  font-family: 'FontAwesome';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 21px;
+  color: #FFF;
+}
