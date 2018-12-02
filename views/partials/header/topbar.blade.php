@@ -21,11 +21,7 @@
                         @include('partials.header.language')
                     </div>
                 </div>
-                <ul class="top-social list-inline pull-right">
-                    <li><a href="{{ setting('theme::facebook') }}" target="_blank"><i class="fa fa-facebook"></i></a></li>
-                    <li><a href="{{ setting('theme::twitter') }}" target="_blank"><i class="fa fa-twitter"></i></a></li>
-                    <li><a href="{{ setting('theme::google') }}" target="_blank"> <i class="fa fa-google-plus"></i></a></li>
-                </ul>
+                @component('partials.components.socials', ['class'=>'top-social list-inline pull-right']) @endcomponent
             </div>
         </div>
     </div>

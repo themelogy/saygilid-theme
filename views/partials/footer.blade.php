@@ -15,14 +15,7 @@
                 <div class="footer-logo ">
                     <a href="{{ url(locale()) }}"><img class="img-responsive" alt="" src="{!! Theme::url("images/logo-white.png") !!}"></a>
                     <div class="socials m-top-20">
-                        <ul class="list-inline">
-                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                            <li><a href="#"><i class="fa fa-youtube"></i></a></li>
-                            <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
-                            <li><a href="#"><i class="fa fa-google"></i></a></li>
-                        </ul>
+                        @component('partials.components.socials', ['class'=>'list-inline']) @endcomponent
                     </div>
                 </div>
             </div>
@@ -64,7 +57,7 @@
         <div class="footer-copyright">
             <div class="row">
                 <div class="col-md-8">
-                    {!! Menu::render('footer', Modules\Theme\Presenters\Saygilid\FooterMenuPresenter::class) !!}
+                    {!! Menu::render('footer', \Themes\Saygilid\Presenter\FooterMenuPresenter::class) !!}
                 </div>
                 <div class="col-md-4">
                     <p class="pull-right text-uppercase">

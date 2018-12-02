@@ -32,7 +32,7 @@
                             <li class="entry-m-date">
                                 <a href="{{ $post->url }}" rel="bookmark" title="{{ $post->title }}">
                                     <i class="fa fa-calendar"></i>
-                                    {{ $post->created_at->formatLocalized('d F Y') }}
+                                    {{ $post->created_at->formatLocalized('%d %B %Y') }}
                                 </a>
                             </li>
                             <li class="entry-m-category">

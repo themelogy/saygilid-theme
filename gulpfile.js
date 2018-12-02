@@ -74,8 +74,7 @@ elixir(function (mix) {
         .copy('resources/assets', 'assets');
 
     mix.version([
-        'css/all.min.css',
-        'vendor/revolution/js/revolution.all.min.js'
+        'css/all.min.css'
     ], 'assets');
 
     mix.stylistPublish();

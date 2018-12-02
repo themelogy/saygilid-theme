@@ -7,7 +7,7 @@
         <nav class="navbar navbar-default">
             <div class="container">
                 <div id="navbar" class="navbar-collapse ">
-                    {!! Menu::render('header', Modules\Theme\Presenters\Saygilid\HeaderMenuPresenter::class) !!}
+                    {!! Menu::render('header', \Themes\Saygilid\Presenter\HeaderMenuPresenter::class) !!}
                 </div>
                 <!--/.nav-collapse -->
             </div>

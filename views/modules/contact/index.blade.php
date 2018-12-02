@@ -8,41 +8,45 @@
             {!! Breadcrumbs::render('contact') !!}
         </div>
     </div>
-    <div class="contact-info">
+    <div class="contact-container">
         <div class="container">
             <div class="row">
-                <div class="col-md-4 col-sm-12">
-                    <div class="text-center"><i class="fa fa-road"></i>
-                        <h3><a href="#">{{ trans('themes::contact.address') }}</a></h3>
-                        <p>{!! setting('theme::address') !!}</p>
+                <div class="col-md-5">
+                    <div class="contact-desc">
+
+                        <h3 class="title" title="{{ setting('theme::company-name') }}"><img src="{{ Theme::url('images/logo-dark.png') }}" alt="{{ setting('theme::company-name') }}" /></h3>
+                        <ul class="no-margin">
+                            <li>
+                                <div class="icon-box"><i class="fa fa-map-marker"></i></div>
+                                <div class="icon-content">{!! setting('theme::address') !!}</div>
+                            </li>
+                            <li>
+                                <div class="icon-box"><i class="fa fa-phone"></i></div>
+                                <div class="icon-content">
+                                    <a rel="nofollow" href="tel:{!! setting('theme::phone') !!}">{!! setting('theme::phone') !!}</a><br/>
+                                    <a rel="nofollow" href="tel:{!! setting('theme::phone2') !!}">{!! setting('theme::phone') !!}</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="icon-box"><i class="fa fa-envelope"></i></div>
+                                <div class="icon-content" style="padding-top: 5px;">
+                                    <a rel="nofollow" href="mailto:{!! setting('theme::email') !!}">{!! setting('theme::email') !!}</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="icon-box"><i class="fa fa-location-arrow"></i></div>
+                                <div class="icon-content">
+                                    <a target="_blank" href="https://www.google.com/maps/dir/Current+Location/{{ setting('contact::contact-map-lat') }},{{ setting('contact::contact-map-lng') }}" class="btn btn-default">{{ trans('themes::contact.buttons.navigation') }}</a>
+                                </div>
+                            </li>
+                        </ul>
                     </div>
                 </div>
-                <div class="col-md-4 col-sm-12">
-                    <div class="text-center"><i class="fa fa-phone"></i>
-                        <h3><a href="#">{{ trans('themes::contact.phone') }}</a></h3>
-                        <p>
-                            {!! setting('theme::phone') !!}<br/>
-                            {!! setting('theme::phone2') !!}
-                        </p>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-12">
-                    <div class="text-center"><i class="fa fa-envelope"></i>
-                        <h3><a href="#">{{ trans('themes::contact.email') }}</a></h3>
-                        <p>{!! HTML::email(setting('theme::email')) !!}</p>
-                    </div>
+                <div class="col-md-7">
+                    @include('contact::form')
                 </div>
             </div>
         </div>
     </div>
-    <div class="google-map">
-        @gmap('300px', '16', 'images/marker.png')
-    </div>
-    <div class="contact-form">
-        <div class="container">
-            <div class="col-md-12">
-                @include('contact::form')
-            </div>
-        </div>
-    </div>
+    @includeIf('contact::map')
 @stop

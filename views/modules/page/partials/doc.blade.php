@@ -1,0 +1,1 @@
+<a class="btn btn-warning page-doc" href=""><i class="fa fa-file-text-o m-r-5"></i> {{ trans('themes::theme.buttons.document') }}</a>

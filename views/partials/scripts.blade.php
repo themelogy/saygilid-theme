@@ -19,24 +19,15 @@
 <!-- jquery-ui.min -->
 {!! Theme::script("js/jquery-ui.min.js") !!}
 
-<script src="{{ elixir('vendor/revolution/js/revolution.all.min.js', 'themes/saygilid') }}"></script>
-
-{!! Theme::style("vendor/revolution/css/navigation.css") !!}
-{!! Theme::style("vendor/revolution/css/settings.css") !!}
-
+{!! Asset::styles('footer') !!}
 @stack('styles')
 @stack('scripts')
+{!! Asset::js('footer') !!}
 
 {!! Theme::script("js/main.js") !!}
 
 @stack('css_inline')
 @stack('js_inline')
-
-<script>
-    jQuery(window).on('load', function(){
-        jQuery('body').show();
-    });
-</script>
 
 <script type="text/javascript">
     WebFontConfig = {
@@ -54,3 +45,12 @@
         var s = document.getElementsByTagName('script')[0];
         s.parentNode.insertBefore(wf, s);
     })(); </script>
+
+
+<script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="afb8ec37-6adb-4f44-b41a-8b35f46f0438";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
+
+<style>
+    .crisp-client .crisp-1rjpbb7 .crisp-1rf4xdh .crisp-ewasyx, .crisp-client .crisp-1rjpbb7 .crisp-1rf4xdh .crisp-kquevr {
+        bottom: 80px !important;
+    }
+</style>

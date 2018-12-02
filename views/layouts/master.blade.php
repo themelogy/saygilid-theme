@@ -11,7 +11,7 @@
     @include('partials.metadata')
 </head>
 
-<body style="display:none;">
+<body>
 
     @include('partials.header.topbar')
 

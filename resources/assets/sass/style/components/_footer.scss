@@ -202,6 +202,11 @@ footer {
   background-size: cover;
   padding: 60px 0 0;
   font-family: $roboto-sans;
+  font-size: 14px;
+  color: darken(white, 20%);
+  a {
+    color: darken(white, 20%);
+  }
 }
 
 .footer-logo {
@@ -221,16 +226,15 @@ footer {
   font-family: $roboto-sans;
   font-size: 16px;
   font-weight: 400;
-  color: #FFF;
+  color: $default-theme-color;
   margin: 0 0 10px;
 }
 
 .footer-widget a {
-  color: #8f8f8f;
+  font-size: 14px !important;
 }
 
 .footer-contact {
-  color: #8F8F8F;
   font-size: 14px;
   li {
     margin-bottom: 5px;
@@ -286,19 +290,17 @@ footer {
 }
 
 .footer-menu li a {
-  color: #8F8F8F;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 42px;
 }
 
 .footer-copyright {
-  border-top: 2px solid rgba(255, 255, 255, 0.1);
+  border-top: 1px solid lighten($footer-bg, 5%);
   margin-top: 19px;
   padding: 19px 0 17px;
 }
 
 .footer-copyright p {
-  color: #8F8F8F;
   font-size: 12px;
   padding: 7px 0 0;
   margin: 0;
@@ -306,7 +308,7 @@ footer {
 }
 
 .footer-copyright p a {
-  color: #BEBEBE;
+//  color: #BEBEBE;
 }
 
 footer .overlay-footer {

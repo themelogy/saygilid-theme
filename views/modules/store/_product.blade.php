@@ -1,8 +1,7 @@
-@if($product->categories()->exists())
     <!-- start product box prod-box -->
     <div class="col-sm-4 col-md-4 col-xs-12 m-bot-20">
         <div class="view view-tenth">
-            <img src="{{ $product->present()->firstImage(270,270,'fit',80) }}" alt="{{ $product->title }}">
+            <img class="img-responsive img-thumbnail" src="{{ $product->present()->firstImage(270,270,'fit',80) }}" alt="{{ $product->title }}">
             <div class="mask">
                 <a class="info darna-button style1 view-modal" href="#">
                     {{ trans('themes::product.quick show') }}
@@ -45,4 +44,3 @@
         </div>
     </div>
     <!-- end product box prod-box -->
-@endif

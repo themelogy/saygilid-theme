@@ -17,7 +17,7 @@
 }
 
 .overlay {
-  background: #000;
+  background: $overlay;
   opacity: 0.75;
   position: absolute;
   top: 0;
@@ -80,11 +80,11 @@
 }
 
 .bcrumbs li + li::before {
-  content: "//";
+  content: "\/";
   display: inline-block;
   padding: 0px 5px;
 }
 
 .page-head .overlay {
-  opacity: 0.4;
+  opacity: 0.8;
 }

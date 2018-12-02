@@ -10,6 +10,9 @@ $theme-colors: (
 
 $default-theme-color: map_get($theme-colors, 'blue1');
 $menu-dropdown-link-hover-color: map_get($theme-colors, 'grey1');
+$gray: map_get($theme-colors, 'grey1');
+$footer-bg: darken($gray, 15%);
+$overlay: $footer-bg;
 
 @mixin page-overlay-margin() {
   padding: 132px 0 40px;

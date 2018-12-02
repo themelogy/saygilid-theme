@@ -1,13 +1,13 @@
 @extends('layouts.master')
 
 @section('content')
-    @include('partials.pages.home.slider')
+    @themeSlide()
 
-    @include('partials.pages.home.process')
+    @pageFindByOptions('settings.show_page_home', 'home.page')
 
-    @include('partials.pages.home.products')
+    @storeLatestProduct(6, 'home.products')
 
-    @include('partials.pages.home.news')
+    @newsLatestPosts(6, 'home.latest')
 
     @if ('test'==1)
 

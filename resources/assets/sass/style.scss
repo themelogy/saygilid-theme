@@ -26,3 +26,71 @@
 @import "style/components/footer";
 @import "style/components/languages";
 @import "style/body";
+@import "margins";
+
+.contact-container {
+  .title {
+    margin-bottom: 20px;
+  }
+  ul li {
+    margin-bottom: 20px;
+    clear: left;
+    font-size: 16px;
+    display: block;
+  }
+  padding: 50px 0;
+  .icon-box {
+    float: left;
+    display: inline-block;
+    margin-right: 20px;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    border: 1px solid #fcf2f2;
+    background-color: $default-theme-color;
+    color: #fff;
+    text-align: center;
+    font-size: 16px;
+    border-radius: 5px;
+  }
+  .icon-content {
+    overflow: hidden;
+    padding: 0;
+    display: block;
+    min-height: 40px;
+  }
+}
+
+.map-container {
+  border-top: 2px solid #ebebeb;
+  .container {
+    position: relative;
+    .icons {
+      position: absolute;
+      z-index: 9999;
+      height: 50px;
+      width: 50px;
+      left: 0;
+      top:-25px;
+      background-color: #ebebeb;
+      color: $default-theme-color;
+      font-size: 20px;
+      line-height: 50px;
+      border-radius: 50px;
+      text-align: center;
+    }
+  }
+}
+
+footer {
+  border-top: 2px solid $default-theme-color;
+}
+
+.process-box {
+  h2 {
+    margin-bottom: 15px;
+  }
+  span {
+    color: #fff;
+  }
+}

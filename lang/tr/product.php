@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'title'      => 'Ekipmanlar',
+    'title'      => 'Ürünler',
     'quick show' => 'Hızlı Görüntüle',
     'similar products' => 'Benzer Ürünler'
 ];

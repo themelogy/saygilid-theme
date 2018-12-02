@@ -1,0 +1,215 @@
+.hidden-xs-up {
+  display: none !important;
+}
+
+@media (max-width: 575px) {
+  .hidden-xs-down {
+    display: none !important;
+  }
+}
+
+@media (min-width: 576px) {
+  .hidden-sm-up {
+    display: none !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .hidden-sm-down {
+    display: none !important;
+  }
+}
+
+@media (min-width: 768px) {
+  .hidden-md-up {
+    display: none !important;
+  }
+}
+
+@media (max-width: 991px) {
+  .hidden-md-down {
+    display: none !important;
+  }
+}
+
+@media (min-width: 992px) {
+  .hidden-lg-up {
+    display: none !important;
+  }
+}
+
+@media (max-width: 1199px) {
+  .hidden-lg-down {
+    display: none !important;
+  }
+}
+
+@media (min-width: 1200px) {
+  .hidden-xl-up {
+    display: none !important;
+  }
+}
+
+.hidden-xl-down {
+  display: none !important;
+}
+
+
+@for $i from 0 through 30 {
+  $i : $i * 5;
+  .m-t-#{$i} {
+    margin-top: $i+px !important;
+  }
+  .m-b-#{$i} {
+    margin-bottom: $i+px !important;
+  }
+  .m-r-#{$i} {
+    margin-right: $i+px !important;
+  }
+  .m-l-#{$i} {
+    margin-left: $i+px !important;
+  }
+  .p-t-#{$i} {
+    padding-top: $i+px !important;
+  }
+  .p-b-#{$i} {
+    padding-bottom: $i+px !important;
+  }
+  .p-r-#{$i} {
+    padding-right: $i+px !important;
+  }
+  .p-l-#{$i} {
+    padding-left: $i+px !important;
+  }
+  .p-tb-#{$i} {
+    padding-top: $i+px !important;
+    padding-bottom: $i+px !important;
+  }
+  .p-lr-#{$i} {
+    padding-left: $i+px !important;
+    padding-right: $i+px !important;
+  }
+  .p-#{$i} {
+    padding: $i+px !important;
+  }
+  .m-#{$i} {
+    margin: $i+px !important;
+  }
+  @media screen and (min-width: 979px){
+    .md-p-#{$i} {
+      padding: $i+px 0 !important;
+    }
+    .md-m-t-#{$i} {
+      margin-top: $i+px !important;
+    }
+    .md-m-b-#{$i} {
+      margin-bottom: $i+px !important;
+    }
+    .md-m-r-#{$i} {
+      margin-right: $i+px !important;
+    }
+    .md-m-l-#{$i} {
+      margin-left: $i+px !important;
+    }
+    .md-p-t-#{$i} {
+      padding-top: $i+px !important;
+    }
+    .md-p-b-#{$i} {
+      padding-bottom: $i+px !important;
+    }
+    .md-p-r-#{$i} {
+      padding-right: $i+px !important;
+    }
+    .md-p-l-#{$i} {
+      padding-left: $i+px !important;
+    }
+    .md-p-tb-#{$i} {
+      padding-top: $i+px !important;
+      padding-bottom: $i+px !important;
+    }
+    .md-m-tb-#{$i} {
+      margin-top: $i+px !important;
+      margin-bottom: $i+px !important;
+    }
+    .md-p-lr-#{$i} {
+      padding-left: $i+px !important;
+      padding-right: $i+px !important;
+    }
+    .md-p-#{$i} {
+      padding: $i+px !important;
+    }
+    .md-m-#{$i} {
+      margin: $i+px !important;
+    }
+  }
+  @media screen and (max-width: 768px){
+    .xs-p-#{$i} {
+      padding: $i+px 0 !important;
+    }
+    .xs-m-t-#{$i} {
+      margin-top: $i+px !important;
+    }
+    .xs-m-b-#{$i} {
+      margin-bottom: $i+px !important;
+    }
+    .xs-m-r-#{$i} {
+      margin-right: $i+px !important;
+    }
+    .xs-m-l-#{$i} {
+      margin-left: $i+px !important;
+    }
+    .xs-p-t-#{$i} {
+      padding-top: $i+px !important;
+    }
+    .xs-p-b-#{$i} {
+      padding-bottom: $i+px !important;
+    }
+    .xs-p-r-#{$i} {
+      padding-right: $i+px !important;
+    }
+    .xs-p-l-#{$i} {
+      padding-left: $i+px !important;
+    }
+    .xs-p-tb-#{$i} {
+      padding-top: $i+px !important;
+      padding-bottom: $i+px !important;
+    }
+    .xs-p-lr-#{$i} {
+      padding-left: $i+px !important;
+      padding-right: $i+px !important;
+    }
+    .xs-p-#{$i} {
+      padding: $i+px !important;
+    }
+    .xs-m-#{$i} {
+      margin: $i+px !important;
+    }
+  }
+}
+
+
+/*Margin for small devices*/
+@media screen and (max-width: 991px) {
+  /*margin top*/
+  .mt-sm-30 {
+    margin-top: 30px;
+  }
+  .mt-sm-50 {
+    margin-top: 50px;
+  }
+
+  /*margin-bottom*/
+  .mb-sm-30 {
+    margin-bottom: 30px;
+  }
+  .mb-sm-50 {
+    margin-bottom: 50px;
+  }
+}
+
+@for $i from 0 through 200 {
+  $i : $i * 5;
+  .h-#{$i} {
+    height: $i+px !important;
+  }
+}

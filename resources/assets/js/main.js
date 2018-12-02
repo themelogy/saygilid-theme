@@ -144,7 +144,7 @@ function owlslider() {
         owlclients2 = jQuery("#clients2"),
         owlitem = jQuery("#owl-item"),
         owlitemauto = jQuery(".owl-item-auto");
-    owlhomeprojects.owlCarousel({
+        owlhomeprojects.owlCarousel({
         itemsCustom: [
             [0, 2],
             [450, 2],
@@ -290,6 +290,35 @@ function owlslider() {
         cat = jQuery(this).attr('ID');
         jQuery(this).addClass('active');
         showProjectsbyCat(cat);
+    });
+
+    // Owl Carousel
+    var owlCarouselSlider = jQuery('.owl-carousel-slider'),
+        owlNav = owlCarouselSlider.attr('data-nav');
+    //owlSliderPagination = owlCarouselSlider.attr('data-pagination');
+
+    var carouselCount = 0;
+    jQuery('.owl-auto').each(function(){
+        jQuery(this).attr("id", "owl-carousel" + carouselCount);
+        var owlItems = jQuery(this).attr('data-items');
+        jQuery('#owl-carousel' + carouselCount).owlCarousel({
+            items: owlItems,
+            navigation: true,
+            dots: true,
+            navigationText: ['', '']
+        });
+        carouselCount++;
+    });
+
+    owlCarouselSlider.owlCarousel({
+        slideSpeed: 300,
+        paginationSpeed: 400,
+        //pagination: owlSliderPagination,
+        singleItem: true,
+        navigation: true,
+        navigationText: ['', ''],
+        transitionStyle: 'fade',
+        autoPlay: 4500
     });
 }
 /*
@@ -683,7 +712,7 @@ jQuery(document).ready(function() {
     owlslider();
     misc();
     vedioplayer();
-    stickynav();
+    //stickynav();
     prettyPhoto();
     gridwithfilter();
     modal_1();

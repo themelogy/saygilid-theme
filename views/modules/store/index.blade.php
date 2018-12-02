@@ -3,11 +3,11 @@
 @section('content')
     <div id="parent-content" class="clearfix">
         <section class="page-head-shop overlay-wrap">
-            <div class="blog-content-title-overlay"></div>
+            <div class="overlay"></div>
             <div class="container">
                 <div class="blog-content-title-inner block-center">
                     <div class="block-center-inner">
-                        <h1>{{ trans('themes::product.title') }}</h1>
+                        <h1 style="margin-bottom: 10px;">{{ trans('themes::product.title') }}</h1>
                         {!! Breadcrumbs::renderIfExists('store.index') !!}
                     </div>
                 </div>
@@ -20,21 +20,21 @@
                     <div class="site-content-archive-inner col-md-9">
                         <div class="prods-cnt">
 
-                        @if($products)
+                             @forelse($products->chunk(3) as $chunk)
+                                 <div class="row">
+                                     @foreach($chunk as $product)
+                                         @include('store::_product')
+                                     @endforeach
+                                 </div>
+                             @empty
 
-                             @foreach($products as $product)
-                                @include('store::_product')
-                             @endforeach
+                            @endforelse
 
-                                <div class="clearfix"></div>
+                             <div class="clearfix"></div>
 
-                                <div class="col-md-12 m-top-20">
-                                    {!! $products->render('store::pagination.default') !!}
-                                </div>
-
-                            @else
-
-                            @endif
+                             <div class="col-md-12 m-top-20">
+                                 {!! $products->render('store::pagination.default') !!}
+                             </div>
                         </div>
                         <!-- /prods-cnt -->
                     </div>

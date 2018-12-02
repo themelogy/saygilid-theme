@@ -3,11 +3,11 @@
 @section('content')
     <div id="parent-content" class="clearfix">
         <section class="page-head-shop overlay-wrap">
-            <div class="blog-content-title-overlay"></div>
+            <div class="overlay"></div>
             <div class="container">
                 <div class="blog-content-title-inner block-center">
                     <div class="block-center-inner">
-                        <h1>{{ $product->title }}</h1>
+                        <h1 style="margin-bottom: 10px;">{{ $product->title }}</h1>
                         {!! Breadcrumbs::renderIfExists('store.product') !!}
                     </div>
                 </div>
