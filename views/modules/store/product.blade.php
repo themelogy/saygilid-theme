@@ -16,7 +16,7 @@
         <main role="main" class="site-content-archive">
             <div class="col-md-6   text-center">
                 <div id="owl-item" class="item-slider">
-                    @foreach($product->present()->images(865, null, 'resize', 80) as $image)
+                    @foreach($product->present()->images(865, null, 'resize', 69, 'watermark.png') as $image)
                         <div><img src="{{ $image }}" alt=""/></div>
                     @endforeach
                     @if(!empty($product->video))

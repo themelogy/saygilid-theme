@@ -1,6 +1,7 @@
 <div class="row">
     <div class="col-md-9">
         @include('page::partials.image')
+        {!! $slot ?? '' !!}
     </div>
     <div class="col-md-3">
         @isset($page->parent)

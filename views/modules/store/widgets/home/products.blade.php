@@ -10,7 +10,7 @@
                         <div class="team-staff text-center">
                             <div class="staff-pic">
                                 <a href="{{ $product->url }}">
-                                    <img src="{!! $product->present()->firstImage(263, 200, 'fit', 80) !!}" class="img-responsive" alt="{{ $product->title }}"/>
+                                    <img src="{!! $product->present()->firstImage(263, 200, 'fit', 81, 'watermark.png') !!}" class="img-responsive" alt="{{ $product->title }}"/>
                                 </a>
                             </div>
                             <div class="staff-info text-uppercase">

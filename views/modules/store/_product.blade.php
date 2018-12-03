@@ -1,7 +1,7 @@
     <!-- start product box prod-box -->
     <div class="col-sm-4 col-md-4 col-xs-12 m-bot-20">
         <div class="view view-tenth">
-            <img class="img-responsive img-thumbnail" src="{{ $product->present()->firstImage(270,270,'fit',80) }}" alt="{{ $product->title }}">
+            <img class="img-responsive img-thumbnail" src="{{ $product->present()->firstImage(270,270,'fit',81,'watermark.png') }}" alt="{{ $product->title }}">
             <div class="mask">
                 <a class="info darna-button style1 view-modal" href="#">
                     {{ trans('themes::product.quick show') }}
@@ -18,7 +18,7 @@
                         </div>
                         <div class="modal-body">
                             <div class="col-md-4 image-container">
-                                <img alt="{{ $product->title }}" class="img-thumbnail" src="{{ $product->present()->firstImage(270,270,'resize',80) }}">
+                                <img alt="{{ $product->title }}" class="img-thumbnail" src="{{ $product->present()->firstImage(270,270,'resize',81,'watermark.png') }}">
                             </div>
                             <div class="col-md-8 data-container">
                                 <h2>{{ $product->title }}</h2>

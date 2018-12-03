@@ -303,7 +303,7 @@ function owlslider() {
         var owlItems = jQuery(this).attr('data-items');
         jQuery('#owl-carousel' + carouselCount).owlCarousel({
             items: owlItems,
-            navigation: true,
+            navigation: false,
             dots: true,
             navigationText: ['', '']
         });
