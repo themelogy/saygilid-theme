@@ -9,7 +9,7 @@ class FooterMenuLinksPresenter extends Presenter
      */
     public function getOpenTagWrapper()
     {
-        return PHP_EOL.'<ul class="c-links">'.PHP_EOL;
+        return PHP_EOL.'<ul class="footer-links">'.PHP_EOL;
     }
 
     /**

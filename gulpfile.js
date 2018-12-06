@@ -53,7 +53,6 @@ elixir(function (mix) {
         "spinkit/spinkit.css",
         "custom.css",
         "flag-icon-css/css/flag-icon.min.css",
-        "style.min.css"
     ],"resources/assets/css/all.min.css");
 
     mix.scripts([
@@ -74,7 +73,8 @@ elixir(function (mix) {
         .copy('resources/assets', 'assets');
 
     mix.version([
-        'css/all.min.css'
+        'css/all.min.css',
+        'css/style.min.css'
     ], 'assets');
 
     mix.stylistPublish();

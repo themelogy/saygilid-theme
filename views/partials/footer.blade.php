@@ -31,12 +31,9 @@
             </div>
             <div class="col-md-3 col-sm-6">
                 <div class="footer-widget">
-                    <h5>Tanıtım</h5>
-                    <ul class="footer-links">
-                        <li><a href="#">Kumlama Makinası</a></li>
-                        <li><a href="#">Basında Biz</a></li>
-                        <li><a href="#">Videolar</a></li>
-                    </ul>
+                    @inject("menu", "\Modules\Menu\Services\MenuService")
+                    <h5>{{ $menu->title('kurumsal') }}</h5>
+                    {!! Menu::render('kurumsal', \Themes\Saygilid\Presenter\FooterMenuLinksPresenter::class) !!}
                 </div>
             </div>
             <div class="col-md-3 col-sm-6">
