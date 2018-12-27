@@ -3,6 +3,7 @@
 <ul>
 @foreach($categories as $category)
 <li><a href="{{ $category->url }}">{{ $category->title }}</a></li>
+@storeSubCategory($category,'sidebar.sub-category')
 @endforeach
 </ul>
 </aside>
