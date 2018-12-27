@@ -22,7 +22,7 @@
                              data-lazyload="{{ $slide->present()->firstImage(1280,550,'fit',70) }}">
                         @if(!empty($slide->title))
                             <div id="slide-{{ $loop->iteration }}-layer-1"
-                                 class="tp-caption darnaverylargetextprimary tp-resizeme"
+                                 class="tp-caption darnaverylargetextprimary tp-resizeme slide-title"
                                  data-height="auto"
                                  data-responsive_offset="on"
                                  data-splitin="none"
@@ -32,14 +32,14 @@
                                  data-transform_in="x:0;y:0;z:0;rX:0;rY:0;rZ:0;sX:0;sY:0;skX:0;skY:0;opacity:0;s:1000;e:easeInOutBack;"
                                  data-transform_out="x:left;skX:45px;s:500;s:500;"
                                  data-width="auto"
-                                 data-x="{{ $slide->position_x }}"
-                                 data-y="{{ $slide->position_y+100 }}"
-                                 style="z-index: 5; white-space: nowrap; border-color: rgba(255, 255, 255, 1.00);"> {{ $slide->title }}
+                                 data-x="0"
+                                 data-y="-100"
+                                 style="z-index: 5; white-space: nowrap; border-color: rgba(255, 255, 255, 1.00); color: {{ $slide->settings->title_color ?? '#ffffff' }}"> {{ $slide->title }}
                             </div>
                         @endif
                         @if(!empty($slide->sub_title))
                             <div id="slide-{{ $loop->iteration }}-layer-2"
-                                 class="tp-caption darnaverylargetext tp-resizeme"
+                                 class="tp-caption darnaverylargetext tp-resizeme slide-subtitle"
                                  data-height="auto"
                                  data-responsive_offset="on"
                                  data-splitin="none"
@@ -51,7 +51,7 @@
                                  data-width="auto"
                                  data-x="{{ $slide->position_x }}"
                                  data-y="{{ $slide->position_y+170 }}"
-                                 style="z-index: 6; white-space: nowrap; border-color: rgba(255, 255, 255, 1.00);"> {{ $slide->sub_title }}
+                                 style="z-index: 6; white-space: nowrap; border-color: rgba(255, 255, 255, 1.00); color: {{ $slide->settings->title_color ?? '#ffffff' }}"> {{ $slide->sub_title }}
                             </div>
                         @endif
                         @if(!empty($slide->content))
@@ -68,7 +68,7 @@
                                  data-width="auto"
                                  data-x="{{ $slide->position_x }}"
                                  data-y="{{ $slide->position_y+255 }}"
-                                 style="z-index: 7; white-space: nowrap; border-color: rgba(255, 255, 255, 1.00);"> {{ $slide->content }}
+                                 style="z-index: 7; white-space: nowrap; border-color: rgba(255, 255, 255, 1.00); color: {{ $slide->settings->content_color ?? '#ffffff' }}"> {{ $slide->content }}
                             </div>
                         @endif
                         @if($slide->link_type != 'none')

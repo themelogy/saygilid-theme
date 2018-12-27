@@ -15,10 +15,11 @@
   .dropdown-menu {
     position: absolute;
     min-width: 250px;
+    width: 100%;
   }
 }
 
-.dropdown-menu>li a::before,
+.dropdown-menu>li a.dropdown-toggle::before,
 .mega-dropdown-menu > li > ul > li > a::before {
   content: "\f105";
   font-family: 'FontAwesome';

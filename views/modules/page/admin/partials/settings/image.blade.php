@@ -24,6 +24,12 @@
                 </div>
                 <div class="form-group" style="margin-right: 10px;">
                     <label>
+                        {!! Form::checkbox("settings[slide_gallery]", 1, old('settings.slide_gallery', isset($page->settings->slide_gallery) ? $page->settings->slide_gallery : null), ['class'=>'flat-blue']) !!}
+                        &nbsp; Slayt olarak göster
+                    </label>
+                </div>
+                <div class="form-group" style="margin-right: 10px;">
+                    <label>
                         {!! Form::checkbox("settings[show_doc]", 1, old('settings.show_doc', isset($page->settings->show_doc) ? $page->settings->show_doc : null), ['class'=>'flat-blue']) !!}
                         &nbsp; Belge Göster
                     </label>

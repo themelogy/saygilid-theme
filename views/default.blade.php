@@ -18,6 +18,8 @@
                         @include('page::partials.menu')
                     @elseif($page && ($page->settings->list_page ?? false))
                         @include('page::partials.list')
+                    @elseif($page && ($page->settings->slide_gallery ?? false))
+                        @include('page::partials.slide')
                     @elseif($page && !($page->settings->list_page ?? false) && !($page->parent->settings->show_menu ?? false))
                         @include('page::partials.image')
                     @endif
