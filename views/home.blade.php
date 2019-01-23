@@ -5,7 +5,7 @@
 
     @pageFindByOptions('settings.show_page_home', 'home.page')
 
-    @storeLatestProduct(6, 'home.products')
+    @storeNewProducts(8, 'home.products')
 
     @newsLatestPosts(6, 'home.latest')
 

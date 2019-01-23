@@ -3,7 +3,7 @@
     <div class="owl-carousel owl-theme owl-auto clearfix" data-items="4">
         @foreach($page->files as $file)
             <div class="item" style="padding: 0 10px;">
-                <a data-fancybox="gallery" data-caption="{{ $page->title }} #{{ $loop->iteration }}" href="{{ Imagy::getImage($file->filename, 'pageImage', ['width'=>800, 'height'=>null, 'mode'=>'resize', 'quality'=>75]) }}"><img class="img-thumbnail" src="{{ Imagy::getImage($file->filename, 'pageImageThumb', ['width'=>270, 'height'=>null, 'mode'=>'resize', 'quality'=>75]) }}"/></a>
+                <a data-fancybox="gallery" data-caption="{{ $page->title }} #{{ $loop->iteration }}" href="{{ Imagy::getImage($file->filename, 'pageImage', ['width'=>800, 'height'=>null, 'mode'=>'resize', 'quality'=>75]) }}"><img class="img-thumbnail" src="{{ Imagy::getImage($file->filename, 'pageImageThumb', ['width'=>null, 'height'=>300, 'mode'=>'resize', 'quality'=>75]) }}"/></a>
             </div>
         @endforeach
     </div>

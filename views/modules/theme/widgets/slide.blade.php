@@ -49,8 +49,8 @@
                                  data-transform_in="x:50;y:150;z:0;rX:0;rY:0;rZ:0;sX:0.5;sY:0.5;skX:0;skY:0;opacity:0;s:1000;e:Power3.easeInOut;"
                                  data-transform_out="x:0;y:0;z:0;rX:0;rY:0;rZ:0;sX:0.75;sY:0.75;skX:0;skY:0;opacity:0;s:500;s:500;"
                                  data-width="auto"
-                                 data-x="{{ $slide->position_x }}"
-                                 data-y="{{ $slide->position_y+170 }}"
+                                 data-x="{{ $slide->settings->title_position_x }}"
+                                 data-y="{{ $slide->settings->title_position_y+170 }}"
                                  style="z-index: 6; white-space: nowrap; border-color: rgba(255, 255, 255, 1.00); color: {{ $slide->settings->title_color ?? '#ffffff' }}"> {{ $slide->sub_title }}
                             </div>
                         @endif
@@ -66,8 +66,8 @@
                                  data-transform_in="x:50;y:150;z:0;rX:0;rY:0;rZ:0;sX:0.5;sY:0.5;skX:0;skY:0;opacity:0;s:1000;e:Power4.easeInOut;"
                                  data-transform_out="x:{-250,250};y:{-150,150};rX:{-90,90};rY:{-90,90};rZ:{-360,360};sX:0;sY:0;opacity:0;s:300;s:300;"
                                  data-width="auto"
-                                 data-x="{{ $slide->position_x }}"
-                                 data-y="{{ $slide->position_y+255 }}"
+                                 data-x="{{ $slide->settings->content_position_x }}"
+                                 data-y="{{ $slide->settings->content_position_y+255 }}"
                                  style="z-index: 7; white-space: nowrap; border-color: rgba(255, 255, 255, 1.00); color: {{ $slide->settings->content_color ?? '#ffffff' }}"> {{ $slide->content }}
                             </div>
                         @endif
@@ -83,8 +83,8 @@
                                  data-transform_in="x:0;y:0;z:0;rX:0;rY:0;rZ:0;sX:0.75;sY:0.75;skX:0;skY:0;opacity:0;s:500;e:Bounce.easeOut;"
                                  data-transform_out="x:right;skX:-85px;s:300;s:300;"
                                  data-width="auto"
-                                 data-x="{{ $slide->position_x }}"
-                                 data-y="{{ $slide->position_y+300 }}"
+                                 data-x="{{ $slide->settings->link_position_x }}"
+                                 data-y="{{ $slide->settings->link_position_y+300 }}"
                                  style="z-index: 8; white-space: nowrap;">
                                 <a class="darna-button style1 size-md" href="{{ $slide->link->url }}" style="margin-right: 10px;">
                                     {!! $slide->link->title !!}
