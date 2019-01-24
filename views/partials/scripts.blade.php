@@ -47,10 +47,13 @@
     })(); </script>
 
 
-<script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="afb8ec37-6adb-4f44-b41a-8b35f46f0438";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
-
-<style>
-    .crisp-client .crisp-1rjpbb7 .crisp-1rf4xdh .crisp-ewasyx, .crisp-client .crisp-1rjpbb7 .crisp-1rf4xdh .crisp-kquevr {
-        bottom: 80px !important;
-    }
-</style>
+<!--Start of Zendesk Chat Script-->
+<script type="text/javascript">
+    window.$zopim||(function(d,s){var z=$zopim=function(c){
+        z._.push(c)},$=z.s=
+        d.createElement(s),e=d.getElementsByTagName(s)[0];z.set=function(o){z.set.
+    _.push(o)};z._=[];z.set._=[];$.async=!0;$.setAttribute('charset','utf-8');
+        $.src='https://v2.zopim.com/?6KRNFhOHU3Fpemdh14hRTZ5YUl1v8s1Z';z.t=+new Date;$.
+            type='text/javascript';e.parentNode.insertBefore($,e)})(document,'script');
+</script>
+<!--End of Zendesk Chat Script-->
