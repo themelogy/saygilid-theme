@@ -29,10 +29,10 @@ function loadScript(url, callback) {
 function dropdownMenu() {
     if (jQuerywindow.width() > 768) {
         jQuery(".dropdown").hover(function() {
-            jQuery(':nth-child(2)', this).not('.dropdown-submenu .dropdown-menu').stop(true, true).slideDown(100);
+            jQuery(':nth-child(2)', this).not('.dropdown-submenu .dropdown-menu').slideDown(100);
             jQuery(this).toggleClass('open');
         }, function() {
-            jQuery(':nth-child(2)', this).not('.dropdown-submenu .dropdown-menu').stop(true, true).slideUp(100);
+            jQuery(':nth-child(2)', this).not('.dropdown-submenu .dropdown-menu').slideUp(100);
             jQuery(this).toggleClass('open');
         });
     } else {

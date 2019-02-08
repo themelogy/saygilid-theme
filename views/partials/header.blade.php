@@ -21,11 +21,11 @@
 <div id="search">
     <button class="close" type="button"><i aria-hidden="true" class="fa fa-times"></i>
     </button>
-    <form>
-        <input placeholder="Ara" type="search" value=""/>
+    {!! Form::open(['route'=>'store.product.search', 'method'=>'get']) !!}
+        <input placeholder="Ara" type="search" value="" name="s" />
         <button class="btn btn-primary" type="submit"><i aria-hidden="true" class="fa fa-search"></i>
         </button>
-    </form>
+    {!! Form::close() !!}
 </div>
 
 <a class="back-to-top" href="#"> <i aria-hidden="true" class="fa fa-chevron-up"></i>
