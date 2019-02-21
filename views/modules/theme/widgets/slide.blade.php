@@ -11,16 +11,16 @@
                         data-slotamount="{{ $loop->iteration }}"
                         data-easein="Power4.easeInOut"
                         data-easeout="Power4.easeInOut"
-                        data-title="{{ $slide->title }}"
+                        data-title="{{ $slide->title ?? '' }}"
                         data-transition="slotfade-horizontal">
-                        <img alt="{{ $slide->title }}"
+                        <img alt="{{ $slide->title ?? '' }}"
                              class="rev-slidebg"
                              data-bgfit="cover"
                              data-bgposition="center center"
                              data-bgrepeat="no-repeat"
                              data-no-retina=""
                              data-lazyload="{{ $slide->present()->firstImage(1280,550,'fit',70) }}">
-                        @if(!empty($slide->title))
+                        @if(@$slide->title)
                             <div id="slide-{{ $loop->iteration }}-layer-1"
                                  class="tp-caption darnaverylargetextprimary tp-resizeme slide-title"
                                  data-height="auto"
@@ -34,10 +34,10 @@
                                  data-width="auto"
                                  data-x="0"
                                  data-y="-100"
-                                 style="z-index: 5; white-space: nowrap; border-color: rgba(255, 255, 255, 1.00); color: {{ $slide->settings->title_color ?? '#ffffff' }}"> {{ $slide->title }}
+                                 style="z-index: 5; white-space: nowrap; border-color: rgba(255, 255, 255, 1.00); color: {{ $slide->settings->title_color ?? '#ffffff' }}"> {{ $slide->title ?? '' }}
                             </div>
                         @endif
-                        @if(!empty($slide->sub_title))
+                        @if(@$slide->sub_title)
                             <div id="slide-{{ $loop->iteration }}-layer-2"
                                  class="tp-caption darnaverylargetext tp-resizeme slide-subtitle"
                                  data-height="auto"
@@ -49,12 +49,12 @@
                                  data-transform_in="x:50;y:150;z:0;rX:0;rY:0;rZ:0;sX:0.5;sY:0.5;skX:0;skY:0;opacity:0;s:1000;e:Power3.easeInOut;"
                                  data-transform_out="x:0;y:0;z:0;rX:0;rY:0;rZ:0;sX:0.75;sY:0.75;skX:0;skY:0;opacity:0;s:500;s:500;"
                                  data-width="auto"
-                                 data-x="{{ $slide->settings->title_position_x }}"
-                                 data-y="{{ $slide->settings->title_position_y+170 }}"
-                                 style="z-index: 6; white-space: nowrap; border-color: rgba(255, 255, 255, 1.00); color: {{ $slide->settings->title_color ?? '#ffffff' }}"> {{ $slide->sub_title }}
+                                 data-x="{{ @$slide->settings->title_position_x }}"
+                                 data-y="{{ @$slide->settings->title_position_y+170 }}"
+                                 style="z-index: 6; white-space: nowrap; border-color: rgba(255, 255, 255, 1.00); color: {{ $slide->settings->title_color ?? '#ffffff' }}"> {{ $slide->sub_title ?? '' }}
                             </div>
                         @endif
-                        @if(!empty($slide->content))
+                        @if(@$slide->content)
                             <div id="slide-{{ $loop->iteration }}-layer-3"
                                  class="tp-caption darnamediumtext tp-resizeme"
                                  data-height="auto"
@@ -66,12 +66,12 @@
                                  data-transform_in="x:50;y:150;z:0;rX:0;rY:0;rZ:0;sX:0.5;sY:0.5;skX:0;skY:0;opacity:0;s:1000;e:Power4.easeInOut;"
                                  data-transform_out="x:{-250,250};y:{-150,150};rX:{-90,90};rY:{-90,90};rZ:{-360,360};sX:0;sY:0;opacity:0;s:300;s:300;"
                                  data-width="auto"
-                                 data-x="{{ $slide->settings->content_position_x }}"
-                                 data-y="{{ $slide->settings->content_position_y+255 }}"
-                                 style="z-index: 7; white-space: nowrap; border-color: rgba(255, 255, 255, 1.00); color: {{ $slide->settings->content_color ?? '#ffffff' }}"> {{ $slide->content }}
+                                 data-x="{{ @$slide->settings->content_position_x }}"
+                                 data-y="{{ @$slide->settings->content_position_y+255 }}"
+                                 style="z-index: 7; white-space: nowrap; border-color: rgba(255, 255, 255, 1.00); color: {{ $slide->settings->content_color ?? '#ffffff' }}"> {{ $slide->content ?? '' }}
                             </div>
                         @endif
-                        @if($slide->link_type != 'none')
+                        @if(@$slide->link_type != 'none')
                             <div id="slide-{{ $loop->iteration }}-layer-4"
                                  class="tp-caption tp-resizeme"
                                  data-height="auto"
@@ -86,8 +86,8 @@
                                  data-x="{{ $slide->settings->link_position_x }}"
                                  data-y="{{ $slide->settings->link_position_y+300 }}"
                                  style="z-index: 8; white-space: nowrap;">
-                                <a class="darna-button style1 size-md" href="{{ $slide->link->url }}" style="margin-right: 10px;">
-                                    {!! $slide->link->title !!}
+                                <a class="darna-button style1 size-md" href="{{ $slide->present()->link->url ?? null }}" style="margin-right: 10px;">
+                                    {!! $slide->link_title ?? null !!}
                                 </a>
                             </div>
                         @endif

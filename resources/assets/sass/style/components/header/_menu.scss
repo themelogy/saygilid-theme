@@ -14,10 +14,11 @@
 .dropdown-submenu {
   .dropdown-menu {
     position: absolute;
+    min-width: 350px;
     li a {
       white-space: nowrap;
-      width: auto;
-      display: inline-block;
+      /* width: auto;
+      display: inline-block; */
     }
   }
 }
