@@ -8,17 +8,21 @@
         @foreach(News::latest(10) as $post)
             <?php $tag = $post->tags()->first(); ?>
             @if($tag)
+                @isset($tag->name)
                 <a class="tag-link-24" href="{{ route('blog.tag', [$tag->slug]) }}" title="3 topics">
                     {{ $tag->name }}
                 </a>
+                @endisset
             @endif
         @endforeach
         @else
             @if(isset($post))
                 @foreach($post->tags()->get() as $tag)
+                    @isset($tag->name)
                     <a class="tag-link-24" href="{{ route('blog.tag', [$tag->slug]) }}" title="3 topics">
                         {{ $tag->name }}
                     </a>
+                    @endisset
                 @endforeach
             @endif
         @endif

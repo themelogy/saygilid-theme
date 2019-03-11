@@ -29,25 +29,17 @@
                     </ul>
                 </div>
             </div>
+            @inject("menu", "\Modules\Menu\Services\MenuService")
             <div class="col-md-3 col-sm-6">
                 <div class="footer-widget">
-                    @inject("menu", "\Modules\Menu\Services\MenuService")
                     <h5>{{ $menu->title('kurumsal') }}</h5>
                     {!! Menu::render('kurumsal', \Themes\Saygilid\Presenter\FooterMenuLinksPresenter::class) !!}
                 </div>
             </div>
             <div class="col-md-3 col-sm-6">
                 <div class="footer-widget">
-                    <h5>{{ trans('themes::theme.newsletters') }}</h5>
-                    <div class="footer-newsletter">
-                        <p>{{ trans('themes::theme.newsletters title') }}</p>
-                        <form>
-                            <input placeholder="E-Posta Adresi" required="" type="email">
-                            <button type="submit"><i class="fa fa-paper-plane">
-                                </i>
-                            </button>
-                        </form>
-                    </div>
+                    <h5>{{ $menu->title('kumlama') }}</h5>
+                    {!! Menu::render('kum', \Themes\Saygilid\Presenter\FooterMenuLinksPresenter::class) !!}
                 </div>
             </div>
         </div>
