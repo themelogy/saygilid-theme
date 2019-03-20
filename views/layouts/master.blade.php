@@ -19,6 +19,8 @@
 
     @yield('content')
 
+    @include('contact::home')
+
     @include('partials.footer')
 
     @stack('menu.parts')

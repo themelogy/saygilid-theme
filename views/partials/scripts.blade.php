@@ -24,7 +24,7 @@
 @stack('scripts')
 {!! Asset::js('footer') !!}
 
-{!! Theme::script("js/main.js?v=1", ["defer"]) !!}
+{!! Theme::script("js/main.js?v=2", ['defer']) !!}
 
 @stack('css_inline')
 @stack('js_inline')

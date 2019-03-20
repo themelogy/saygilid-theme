@@ -1,7 +1,7 @@
 <header class="header-4">
     <div class="container">
         <div class="navbar-header">
-            <button class=" burger-menu easy-sidebar-toggle"></button>
+            <button class="burger-menu easy-sidebar-toggle"></button>
             <a class="navbar-brand" href="{{ url(locale()) }}"> <img alt="" src="{!! Theme::url("images/logo-dark.png") !!}"></a>
         </div>
         <nav class="navbar navbar-default">
