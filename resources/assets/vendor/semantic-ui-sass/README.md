@@ -1,8 +1,8 @@
 # Semantic UI for Sass
 
-`semantic-ui-sass` is an Sass-powered version of [Semantic UI](https://github.com/Semantic-Org/Semantic-UI) and ready to drop into Rails & Compass.
+`semantic-ui-sass` is an Sass-powered version of [Semantic UI](https://github.com/Semantic-Org/Semantic-UI) and ready to drop into Rails, Compass, or Sprockets.
 
-[![Build Status](https://travis-ci.org/doabit/bootstrap-sass-extras.png?branch=master)](https://travis-ci.org/doabit/bootstrap-sass-extras)
+[![Build Status](https://travis-ci.org/doabit/semantic-ui-sass.svg?branch=master)](https://travis-ci.org/doabit/semantic-ui-sass)
 
 ## NOTE
 
@@ -11,12 +11,12 @@ The gem only has default theme.
 ## Installation and Usage
 
 ```ruby
-gem 'semantic-ui-sass', git: 'https://github.com/doabit/semantic-ui-sass.git'
+gem 'semantic-ui-sass'
 ```
 
 `bundle install` and restart your server to make the files available through the pipeline.
 
-# semantic-ui-sass with Rails
+# semantic-ui-sass with Rails or Sprockets
 
 ## CSS
 
@@ -51,15 +51,43 @@ $font-family: 'custom-font-family';
 @import 'semantic-ui';
 ```
 
-## All variables, you can custom any of that
+### Skip use of custom scrollbars
+
 ```css
-$import-google-fonts: true !default;
-$font-url: 'https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic&subset=latin,latin-ext' !default;
+$use-custom-scrollbars: false;
+@import 'semantic-ui';
+```
+
+## All variables, you can custom any of that
+
+Fonts:
+
+```css
 $font-name: 'Lato' !default;
 $font-family: $font-name, 'Helvetica Neue', Arial, Helvetica, sans-serif !default;
+$font-url: 'https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic&subset=latin,latin-ext' !default;
+$import-google-fonts: true !default;
+```
+
+Scrollbars:
+
+```css
+$use-custom-scrollbars: true !default;
+```
+
+Breakpoints:
+
+```css
+$mobile-breakpoint: 320px !default;
+$tablet-breakpoint: 768px !default;
+$computer-breakpoint: 992px !default;
+$large-monitor-breakpoint: 1200px !default;
+$widescreen-monitor-breakpoint: 1920px !default;
 ```
 
 ## Javascripts
+
+### Ruby on Rails Version 5
 
 We have a helper that includes all Semantic javascripts. Put this in your Javascript manifest (usually in `application.js`) to
 
@@ -74,6 +102,32 @@ You can also load individual modules, provided you also require any dependencies
 //= require semantic-ui/modal
 //= require semantic-ui/dropdown
 ```
+
+### Ruby on Rails Version 6+
+
+Add packages with yarn:
+
+```console
+yarn add jquery popper.js semantic-ui-sass
+```
+
+In config/webpack/environment.js add the following:
+
+```js
+const webpack = require("webpack")
+
+environment.plugins.append("Provide", new webpack.ProvidePlugin({
+  $: 'jquery',
+  jQuery: 'jquery',
+  Popper: ['popper.js', 'default']
+}))
+````
+
+In app/javascript/packs/application.js add the following:
+
+```js
+require("semantic-ui-sass")
+````
 
 # semantic-ui-sass with Compass
 

@@ -101,6 +101,7 @@
                                 this.successMessage = response.data.message;
                                 this.response = response.data.data;
                                 this.success = true;
+                                gtag('event', 'conversion', {'send_to': 'AW-751136476/EupOCNPo6poBENzdleYC'});
                                 this.resetForm();
                                 this.ajaxStart(false);
                                 setTimeout(()=>{

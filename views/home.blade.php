@@ -1,7 +1,7 @@
 @extends('layouts.master')
 
 @section('content')
-    @themeSlide()
+    @themeSlide('anasayfa', 'slide2')
 
     @pageFindByOptions('settings.show_page_home', 'home.page')
 

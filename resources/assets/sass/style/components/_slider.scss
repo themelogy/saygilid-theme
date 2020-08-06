@@ -233,32 +233,32 @@ ul.vertical-images li:hover .button {
   margin: 57px 0 60px;
 }
 
-.content-head:before {
-  content: "";
-  display: table;
-  width: 57px;
-  height: 15px;
-  border-style: solid;
-  border-width: 5px 5px 0px;
-  position: absolute;
-  margin: 0px auto;
-  left: 0;
-  right: 0;
-  top: 0;
-}
-
-.content-head:after {
-  content: "";
-  display: table;
-  border-style: solid;
-  border-width: 0 0 5px 0;
-  width: 57px;
-  margin: 0px auto;
-  position: absolute;
-  bottom: -26px;
-  left: 0;
-  right: 0;
-}
+//.content-head:before {
+//  content: "";
+//  display: table;
+//  width: 57px;
+//  height: 15px;
+//  border-style: solid;
+//  border-width: 5px 5px 0px;
+//  position: absolute;
+//  margin: 0px auto;
+//  left: 0;
+//  right: 0;
+//  top: 0;
+//}
+//
+//.content-head:after {
+//  content: "";
+//  display: table;
+//  border-style: solid;
+//  border-width: 0 0 5px 0;
+//  width: 57px;
+//  margin: 0px auto;
+//  position: absolute;
+//  bottom: -26px;
+//  left: 0;
+//  right: 0;
+//}
 
 @media screen and (min-width:0\0) and (min-resolution: +72dpi) {
   /* IE9+ CSS*/

@@ -1,3 +1,52 @@
+## 2.4.2.0
+
+* Update Semantic UI to 2.4.2
+* Add $use-custom-scrollbar variable to optionally use native scrollbars #138
+
+## 2.4.0.1
+
+* Include new placeholder element #133
+
+## 2.4.0.0
+
+* Update Semantic UI to 2.4.0
+
+## 2.3.3.0
+
+* Update Semantic UI to 2.3.3
+
+## 2.3.1.2
+
+* update icons font
+
+## 2.3.1.1
+
+* add missing brand-icon files #128
+
+## 2.3.1.0
+
+* Update Semantic UI to 2.3.1
+
+## 2.3.0.0
+
+* Update Semantic UI to 2.3.0
+
+## 2.2.14
+
+* Update Semantic UI to 2.2.14
+
+## 2.2.12.1
+
+* Add sprockets support #120
+
+## 2.2.10.1
+
+* Fix flag.png path
+
+## 2.2.10.0
+
+* Update Semantic UI to 2.2.10
+
 ## 2.2.9.3
 
 * Fix semantic-ui.js require statements

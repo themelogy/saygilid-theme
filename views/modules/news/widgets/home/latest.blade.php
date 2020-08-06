@@ -18,15 +18,15 @@
                             @endif
                             <div class="blog-excerpt">
                                 <h3 class="text-uppercase"><a href="{{ $post->url }}">{{ $post->title }}</a></h3>
-                                <div class="blog-meta text-uppercase">
-                                    <i class="fa fa-calendar"></i>
-                                    <span>{{ $post->created_at->formatLocalized('%d %B %Y') }}</span>
-                                    <i class="fa fa-user"></i>
-                                    <span><a href="{{ $post->category->url }}">{{ $post->category->name }}</a></span>
-                                </div>
-                                <p> {!! \Str::words(strip_tags($post->intro), 10) !!}
-                                    <a class="btn btn-black btn-xs" href="{{ $post->url }}">{{ trans('global.buttons.read more') }}</a>
-                                </p>
+                                {{--<div class="blog-meta text-uppercase">--}}
+                                    {{--<i class="fa fa-calendar"></i>--}}
+                                    {{--<span>{{ $post->created_at->formatLocalized('%d %B %Y') }}</span>--}}
+                                    {{--<i class="fa fa-user"></i>--}}
+                                    {{--<span><a href="{{ $post->category->url }}">{{ $post->category->name }}</a></span>--}}
+                                {{--</div>--}}
+                                {{--<p> {!! \Str::words(strip_tags($post->intro), 10) !!}--}}
+                                    {{--<a class="btn btn-black btn-xs" href="{{ $post->url }}">{{ trans('global.buttons.read more') }}</a>--}}
+                                {{--</p>--}}
                             </div>
                         </div>
                     </div>

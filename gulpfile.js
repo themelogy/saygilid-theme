@@ -52,7 +52,7 @@ elixir(function (mix) {
         "pp/css/prettyPhoto.css",
         "spinkit/spinkit.css",
         "custom.css",
-        "flag-icon-css/css/flag-icon.min.css",
+        "flag-icon-css/css/flag-icon.min.css"
     ],"resources/assets/css/all.min.css");
 
     mix.scripts([

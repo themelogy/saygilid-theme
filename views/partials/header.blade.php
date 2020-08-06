@@ -2,7 +2,11 @@
     <div class="container">
         <div class="navbar-header">
             <button class="burger-menu easy-sidebar-toggle"></button>
+            @if(locale()=="ru")
+            <a class="navbar-brand" href="{{ url(locale()) }}"> <img alt="" src="{!! Theme::url("images/logo-dark-ru.png") !!}"></a>
+            @else
             <a class="navbar-brand" href="{{ url(locale()) }}"> <img alt="" src="{!! Theme::url("images/logo-dark.png") !!}"></a>
+            @endif
         </div>
         <nav class="navbar navbar-default">
             <div class="container">

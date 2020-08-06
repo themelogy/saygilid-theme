@@ -13,7 +13,11 @@
         <div class="row">
             <div class="col-md-3 col-sm-6">
                 <div class="footer-logo ">
+                    @if(locale()=="ru")
+                    <a href="{{ url(locale()) }}"><img class="img-responsive" alt="" src="{!! Theme::url("images/logo-white-ru.png") !!}"></a>
+                    @else
                     <a href="{{ url(locale()) }}"><img class="img-responsive" alt="" src="{!! Theme::url("images/logo-white.png") !!}"></a>
+                    @endif
                     <div class="socials m-top-20">
                         @component('partials.components.socials', ['class'=>'list-inline']) @endcomponent
                     </div>

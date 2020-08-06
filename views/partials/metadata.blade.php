@@ -12,7 +12,6 @@
 @else
 {!! Theme::style('css/style.min.css') !!}
 @endif
-{{-- {!! Theme::style('css/style.min.css') !!} --}}
 <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/0.8.2/css/flag-icon.min.css" />
 
 
@@ -37,4 +36,13 @@
   gtag('js', new Date());
 
   gtag('config', 'UA-98121507-10');
+</script>
+
+<!-- Global site tag (gtag.js) - Google Ads: 751136476 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-751136476"></script>
+<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'AW-751136476');
 </script>

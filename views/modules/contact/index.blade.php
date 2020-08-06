@@ -13,8 +13,11 @@
             <div class="row">
                 <div class="col-md-5">
                     <div class="contact-desc">
-
+                        @if(locale()=="ru")
+                        <h3 class="title" title="{{ setting('theme::company-name') }}"><img src="{{ Theme::url('images/logo-dark-ru.png') }}" alt="{{ setting('theme::company-name') }}" /></h3>
+                        @else
                         <h3 class="title" title="{{ setting('theme::company-name') }}"><img src="{{ Theme::url('images/logo-dark.png') }}" alt="{{ setting('theme::company-name') }}" /></h3>
+                        @endif
                         <ul class="no-margin">
                             <li>
                                 <div class="icon-box"><i class="fa fa-map-marker"></i></div>
